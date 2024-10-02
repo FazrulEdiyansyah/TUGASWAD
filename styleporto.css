@@ -1,46 +1,241 @@
-/* * {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
-body {
+}
+
+body{
   font-family: 'Segoe UI';
-  color: #333;
-  background-color: #fff;
-  /* line-height: 1.6; */
+  background-color: #0B0E14;
+  color: #fff;
 }
+
 header{
-background-color: #2a5298;
-color: white;
-padding: 40px 0;
-text-align: center;
-position: relative;
+  position: fixed;
+  width: 100%;
+  padding: 20px 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-header h1 {
-font-size: 3rem;
-letter-spacing: 2px;
+
+.navbaratas{
+  font-size: 2em;
+  font-weight: 700;
+  color: #3491FF
 }
-header p {
-font-size: 1.2rem;
-margin-top: 10px;
+
+nav{
+  display: flex;
+  gap: 50px;
 }
-nav {
-display: flex;
-justify-content: center;
-padding: 20px 0;
-background-color: #1e3c72;
-}
+
 nav a {
-color: white;
-margin: 0 15px;
-padding: 10px 20px;
-font-weight: bold;
-text-transform: uppercase;
-transition: background 0.3s;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s ease;
+  color: #FFF;
 }
 
 nav a:hover {
-background-color: white;
-color: #2a5298;
-border-radius: 5px;
+  color: #3491FF;
+}
+
+.main{
+  height: 100vh;
+  background-image: url('./Source/bek.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main h1{
+  font-size: 4.2em;
+  margin-bottom: 20px;
+}
+
+.main p{
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+}
+
+.mainbutton{
+  padding: 15px 30px;
+  background-color: #3491FF;
+  color: #0B0E14;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.mainbutton:hover{
+  background-color: #fff;
+}
+
+.about{
+  padding: 100px 80px;
+  background-color: #13181F;
+  text-align: center;
+}
+
+.about h2{
+  font-size: 2.5em;
+  color: #3491FF;
+  margin-bottom: 40px;
+}
+
+.aboutme{
+  display: flex;
+  gap: 250px;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutme img{
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.about-content{
+  max-width: 600px;
+  text-align: left;
+  color: #bbb;
+  margin-top: 20px;
+}
+
+.about-content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3491FF;
+  color: #0B0E14;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.about-content a:hover {
+  background-color: #fff;
+}
+
+.projek{
+  padding: 100px 50px;
+  background-color: #0B0E14;
+  text-align: center;
+}
+
+.projek h2{
+  font-size: 2.5em;
+  color: #3491FF;
+  margin-bottom: 65px;
+}
+
+.projek-section{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.projek-item{
+  background-color: #13181F;
+  width: min-content;
+  padding: 40px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.projek-item:hover {
+  transform: translateY(-10px);
+}
+
+.projek-item img {
+  width: 300px; 
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.projek-item h3 {
+  font-size: 1.9em;
+  margin-bottom: 20px;
+}
+
+.projek-item p {
+  text-align: justify;
+  font-size: 1em;
+  color: #AAA;
+}
+
+.skills {
+  padding: 100px 80px;
+  background-color: #13181F;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2.5em;
+  color: #3491FF;
+  margin-bottom: 65px;
+}
+
+.skills-section {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.skill-item {
+  text-align: center;
+}
+
+.skill-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.skill-item p {
+  font-size: 1.2em;
+  color: #AAA;
+}
+
+footer {
+  background-color: #0B0E14;
+  padding: 40px;
+  text-align: center;
+  color: #FFF;
+  margin-top: 50px;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+.footer-logo {
+  margin-top: 20px;
+}
+
+.footer-logo a {
+  margin: 0 15px;
+}
+
+.footer-logo img {
+  width: 30px;
+  height: 30px;
 }
